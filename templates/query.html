@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <style>
+                input[type=text]{
+                  width: 100%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                }
+                
+                button[type=submit] {
+                  width: 100%;
+                  background-color:blue;
+                  color: white;
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+                
+                input[type=submit]:hover {
+                  background-color:blue;
+                }
+                .container{
+                    width:30%;
+                    margin:8px 0;
+                    align-content: center;
+                    padding:16px 25px
+                }
+                
+    </style>            
+    
+</head>
+<body>
+    <form method="POST">
+        <div class="container">
+            <h2><label for="name">Enter the query to search: </label></h2>
+            <label for name="query"></label>
+            <input type="text" name="query">
+            
+            <button type="submit">submit</button>
+        </div> 
+    </form>
+
+    <h1>Summary for searched Query.............</h1>
+    <h4>Title:  {{ title }}</h4>
+    <h4>URL:  {{ url }}</h4>
+    <h4>Summary:  {{ summ }}</h4>
+
+</body>
+</html>
